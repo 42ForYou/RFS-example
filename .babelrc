@@ -1,0 +1,12 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    [
+      "@babel/plugin-transform-react-jsx",
+      {
+        "pragma": "rfs.createElement", // React.createElement 대신 rfs.createElement를 사용
+        "pragmaFrag": "rfs.Fragment" // React.Fragment 대신 rfs.Fragment를 사용
+      }
+    ]
+  ]
+}
